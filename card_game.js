@@ -11,19 +11,39 @@ function getInput(prompt) {
 // YOUR CODE STARTS HERE!!
 
 // STEP ONE - Building A Deck.
-
-//buildDeck.push and position array
 // 1. use a function declaration to create a buildDeck function.
+//buildDeck.push and position array
+function buildDeck() {
 // 2. inside the buildDeck function, create an array called "suits" that lists all four suits from a deck of card as strings.
+  const suits = ["spade", "club", "heart", "diamond"];
 // 3. inside the buildDeck function, create a 2nd array called "ranks" that lists all 13 cards from ace to King as strings.
+  const ranks = ["ace", "king", "queen", "10", "9", "8", "7", "6", "5", "4", "3", "2"];
 // 4. inside the buildDeck function, create an empty array called "deck"
+let deck = [ranks.push(deck), suits.push(deck), value.push(deck)];
+obj = {};
 // 5. inside the buildDeck function, create a for loop INSIDE of another for loop. The outer loop should loop through the ranks. The inner loop should loop through the suits. Make sure to use different variables for your iterators.
-// 6. inside your inner for loop, push your looped iterations of ranks and suits as OBJECTS into the empty deck array. Add a third property to this object with the key "value" and the value equal to the current iterator.
-// HINT: The result of step 6 is that each card will be an object inside of the deck array, for example [{suit: "diamonds", rank: "A", value: 0}, {suit: "diamonds", rank: "2", value: 1},...{etc}]. For example, if we wanted to organize the players and teams of the NBA with index numbers, we could write: nba.push({player: players[i], team: teams[n], index: i})
+
+for (let r = 0; r < ranks.length; r ++) {
+  console.log(r);
+  for (let s = 0; s < suits.length; s ++) {
+    deck['rank'] = ranks[r];
+    deck['suits'] = suits[s];
+    deck['value'] = ranks[r];
+    
+  };
+  console.log(suits);
+}
+console.log(ranks);
 // 7. After your loops, return deck, which should now return an array full of card objects if you were to run buildDeck().
+return deck; 
+}
+// 6. inside your inner for loop, push your looped iterations of ranks and suits as OBJECTS into the empty deck array. Add a third property to this object with the key "value" and the value equal to the current iterator.
 
 // STEP TWO - Shuffling your deck
 // 1. use a function declaration to create a function called shuffle that takes deck as an argument.
+function shuffle() {
+  let shuffledDeck = deck
+}
 // 2. Inside this function create a variable called "shuffledDeck" that takes deck as its value.
 // 3. Using "let" declare three new variables: currentIndex, whos value should equal the length of the deck array, and two more: temporaryValue and randomIndex, each of which should currently have no value assigned.
 // 4. Create a while loop whos condition is that "currentIndex" does not equal 0, so that we stop looping once we've gone through all 52 cards.
